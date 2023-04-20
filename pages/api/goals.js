@@ -55,8 +55,6 @@ async function addGoal(title){
 export default async function handler(req,res){
   if (req.method === 'POST') {
     const { title } = req.body.params;
-    console.log('body',req.body)
-    console.log('title',title)
     const resp = await addGoal(title);
     return res.status(200).json(resp);
   } else {

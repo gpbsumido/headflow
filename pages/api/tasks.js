@@ -50,8 +50,7 @@ async function addTask(goalId,title){
           { session }
         );
 
-      console.log(newTask);
-      console.log(newTask.insertedId);
+      //console.log(newTask);
       
       //if (tasksCollection.acknowledged) {
         response = await db
@@ -88,10 +87,6 @@ async function addTask(goalId,title){
 
 
     return JSON.parse(JSON.stringify(newTask));
-
-    // console.log( {
-    //     props: { movies: JSON.parse(JSON.stringify(movies)) },
-    // })
   } catch (e) {
       console.error(e);
   }

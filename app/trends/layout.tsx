@@ -1,5 +1,4 @@
-import Header from '@/components/Header'
-import '../styles/globals.css'
+import '../../styles/globals.css'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,11 +11,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className='flex flex-col'>
-        <Header />
+      <div className='h-full w-full flex flex-col'>
         {children}
-      </body>
-    </html>
+      </div>
   )
 }

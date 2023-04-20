@@ -32,7 +32,6 @@ export default function GoalList() {
         return prevState.concat(newGoals);
       });
       setNewGoalName('');
-      //console.log(response.data);
     });
   }
 

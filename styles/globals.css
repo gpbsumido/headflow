@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  background-color: #d0dee7;
+}
+
 html, body {
   height: 100%;
   width: 100%;
+  background-color: #FDF8E2;
+}
+
+.headflow-blue {
+  background-color: #cbe1ef;
 }
 
 li {
